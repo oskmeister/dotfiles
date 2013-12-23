@@ -18,14 +18,18 @@ Bundle 'gmarik/vundle'
 " plugins
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 
-autocmd vimenter * TagbarToggle
-autocmd vimenter * NERDTree
+:map <C-T> :TagbarToggle<CR>
+:map <C-F> :NERDTreeToggle<CR>
 
-colorscheme darkblue 
+colorscheme delek
+
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
 
 let g:syntastic_python_checkers=['pylint']
 let g:syntastic_cpp_compiler = 'clang++'

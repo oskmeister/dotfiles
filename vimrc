@@ -34,4 +34,3 @@ inoremap {}     {}
 let g:syntastic_python_checkers=['pylint']
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-let g:ycm_global_ycm_extra_conf = '/Users/osk/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
